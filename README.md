@@ -4,7 +4,7 @@ Back-end for Comic-Address-Book Project
 # Cách chạy code
 - Cài đặt Visual Studio (Tải từ https://visualstudio.microsoft.com/fr/downloads/)
 - Trong Visual Installer, chọn ASP.NET and web development và .NET desktop development -> Cài đặt
-- Mở project bằng Visual Studio, click vào nút ![image](https://github.com/trandinhnamuet/Comic-Address-Book-Back/assets/57098527/2d38f799-75ea-4b36-b9bc-19df9192f0e6)
+- Mở project bằng Visual Studio, Ctrl F5 hoặc click vào nút ![image](https://github.com/trandinhnamuet/Comic-Address-Book-Back/assets/57098527/2d38f799-75ea-4b36-b9bc-19df9192f0e6)
 (Hoặc tải và cài dotnet từ https://dotnet.microsoft.com/en-us/download rồi mở folder chứa project, chạy dotnet run. VD: C:\Users\Admin\source\repos\ComicAddressBook\ComicAddressBook>dotnet run)
 
 - Cơ sở dữ liệu
@@ -14,4 +14,4 @@ Back-end for Comic-Address-Book Project
 # Mô tả chức năng
 - Liên kết với SQL Server
 - Trả lời truy vấn login của frontend
-- 
+- API ComicLink
