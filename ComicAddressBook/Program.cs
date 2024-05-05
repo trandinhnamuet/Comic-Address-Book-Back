@@ -1,6 +1,10 @@
+﻿using ComicAddressBook.Services;
 using Newtonsoft.Json.Serialization;
 
 var builder = WebApplication.CreateBuilder(args);
+
+//Cài đặt mã hóa UTF-8 cho console trong C# để log in ra có dấu
+Console.OutputEncoding = System.Text.Encoding.UTF8;
 
 // Add services to the container.
 
@@ -34,5 +38,9 @@ if (app.Environment.IsDevelopment())
 app.UseAuthorization();
 
 app.MapControllers();
+
+UpdateChapterService updateChapter = new UpdateChapterService();
+Thread dailyScanThread = new Thread(() => updateChapter.ScheduledScan(10000));
+dailyScanThread.Start();
 
 app.Run();
