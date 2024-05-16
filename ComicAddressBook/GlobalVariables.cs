@@ -34,7 +34,7 @@ namespace ComicAddressBook
         {
             // Lấy ra danh sách latestChapID từ tất cả bản ghi trong bảng ComicLink
             //// Lấy ra những bản ghi từ bảng Chapter có chapID tương ứng latestChapID
-            //// Thêm vào một LinkedList<Chapter> listLatestChap
+            //// Thêm vào một LinkedList<Chapter> listLatestChap    
             using (SqlConnection con = new SqlConnection(dataService.getConnectionString()))
             {
                 con.Open();

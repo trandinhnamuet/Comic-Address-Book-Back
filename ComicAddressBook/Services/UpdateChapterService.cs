@@ -100,8 +100,6 @@ namespace ComicAddressBook.Services
                     return ScanType2Web(chapter, 4);
                 case string link when link.Contains("nettrom"):                    //cuu truyen
                     return ScanNettrom(chapter);
-
-
                 case string link when link.Contains("vivicomi"):         //https://vivicomi.info/           == tu sach nho
                     return ScanType1Web(chapter, 5);
 
